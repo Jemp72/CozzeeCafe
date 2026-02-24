@@ -1,0 +1,151 @@
+@import url(style.css);
+:root {
+    --dry-sage: #c9cba3;
+    --soft-peach: #ffe1a8;
+    --vibrant-coral: #e26d5c;
+    --whine-plum: #723d46;
+    --mauve-shadow: #472d30;
+    --darker-brown: rgb(28, 14, 10);
+}
+
+.menu-section {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--soft-peach);
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3vw;
+    height: auto;
+    width: 100%;
+    border-bottom: 10px solid var(--darker-brown);
+    padding: 5vh 0 5vh 0;
+}
+
+.menu-section h1{
+    text-decoration: dashed;
+    margin-left: 50px;
+    height: auto;
+    font-size: 60px;
+}
+
+.menu-card {
+    border: 2px solid var(--darker-brown);
+    height: 20em;
+    width: 20%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 0px 0px var(--darker-brown);
+    transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: translate(-8px, -8px);
+    box-shadow: 8px 8px 0px 0px var(--darker-brown);
+}
+
+.menu-card p {
+    height: 2em;
+}
+
+.menu-image {
+    border: 1px solid var(--darker-brown);
+    width: 100%;
+    height: 10em;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.price {
+    font-weight: 600;
+}
+
+.menu-card {
+    overflow: hidden;
+}
+
+
+.latte {
+    background-image: url(images/latte.jpg);
+}
+
+.americano {
+    background-image: url(images/iced-americano.jpg);
+}
+
+.mocha {
+    background-image: url(images/mocha.jpg);
+}
+
+.coldbrew {
+    background-image: url(images/cold-brew.jpg);
+}
+
+.ricebowl {
+    background-image: url(images/honey-garlic-chicken-rice-bowls_afarmgirlsdabbles_01v.jpg);
+}
+
+.avocado {
+    background-image: url(images/avocado-toast.jpg);
+}
+
+.grilledcheese {
+    background-image: url(images/grilled-cheese.jpg);
+}
+
+.pasta {
+    background-image: url(images/creamy-pasta.jpg);
+}
+
+.cheesecake {
+    background-image: url(images/cheese-cake.jpg);
+}
+
+.brownie {
+    background-image: url(images/grilled-cheese.jpg);
+}
+
+.tiramisu {
+    background-image: url(images/tiramisu.jpg);
+}
+
+.cookie {
+    background-image: url(images/cookie.jpg);
+}
+
+
+.stars {
+    width: 100%;
+    font-size: 14px;
+    margin-left: 8px;
+    text-align: right;
+}
+
+
+@media (max-width: 768px) {
+    .menu-section {
+        height: auto;
+    }
+    .container {
+        flex-direction: column;
+        row-gap: 10px;
+        height: auto;
+    }
+    
+    .menu-card {
+        width: 80vw;
+    }
+}
+
+
+
